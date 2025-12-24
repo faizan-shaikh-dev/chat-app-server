@@ -64,7 +64,7 @@ app.get("/", (req, res) => {
 });
 
 //Auth Base Route
-app.use("/api/v1/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 
 //Chat Base Route
 app.use("/api/chats", chekAuth, chatRoutes);
